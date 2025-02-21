@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3157517E2D68379C00A9A488 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3157517D2D68379C00A9A488 /* KeychainSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		316D52562D64666900BC21A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3157517E2D68379C00A9A488 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = zulzul;
 			packageProductDependencies = (
+				3157517D2D68379C00A9A488 /* KeychainSwift */,
 			);
 			productName = zulzul;
 			productReference = 316D52452D64666700BC21A2 /* zulzul.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 316D523C2D64666700BC21A2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3157517C2D6833A500A9A488 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 316D52462D64666700BC21A2 /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3157517C2D6833A500A9A488 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3157517D2D68379C00A9A488 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3157517C2D6833A500A9A488 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 316D523D2D64666700BC21A2 /* Project object */;
 }
